@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rath Web Works</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">RATH <span>WEB WORKS</span></div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#order" class="nav-cta">Get Started</a>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
+    <a href="#order" onclick="toggleMenu()">Order</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">🏆 Premium Web Design Agency</p>
+      <h1>We Build Websites<br><span class="gold">That Dominate.</span></h1>
+      <p class="hero-sub">Professional websites that turn visitors into customers.<br>Fast delivery. Stunning design. Unbeatable quality.</p>
+      <div class="hero-btns">
+        <a href="#order" class="btn-primary">Order Now →</a>
+        <a href="#portfolio" class="btn-secondary">View Work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="gold">50+</span><p>Projects Done</p></div>
+        <div class="stat"><span class="gold">100%</span><p>Client Satisfaction</p></div>
+        <div class="stat"><span class="gold">3 Days</span><p>Avg Delivery</p></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glow-box">
+        <div class="code-mock">
+          <div class="dot-row">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <p class="code-line"><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"your-website"</span><span class="tag">&gt;</span></p>
+          <p class="code-line">&nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span><span class="val">Dream Website</span><span class="tag">&lt;/h1&gt;</span></p>
+          <p class="code-line">&nbsp;&nbsp;<span class="tag">&lt;p&gt;</span><span class="val">Built by Rath</span><span class="tag">&lt;/p&gt;</span></p>
+          <p class="code-line"><span class="tag">&lt;/div&gt;</span></p>
+          <p class="code-line blink">█</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="section-label">WHAT WE OFFER</div>
+    <h2>Our <span class="gold">Services</span></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>Landing Page</h3>
+        <p>High-converting single page websites that make your brand shine.</p>
+        <div class="price">Starting ₹999</div>
+      </div>
+      <div class="service-card featured">
+        <div class="badge">POPULAR</div>
+        <div class="service-icon">💼</div>
+        <h3>Business Website</h3>
+        <p>Full multi-page professional website for your business.</p>
+        <div class="price">Starting ₹2,499</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <h3>E-Commerce</h3>
+        <p>Online store with product listings, cart, and payment integration.</p>
+        <div class="price">Starting ₹4,999</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Portfolio Site</h3>
+        <p>Showcase your work with a stunning personal portfolio website.</p>
+        <div class="price">Starting ₹1,499</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="section-label">OUR WORK</div>
+    <h2>Recent <span class="gold">Projects</span></h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="p-thumb" style="background: linear-gradient(135deg, #1a1a2e, #D4AF37)"><span>Fashion Store</span></div>
+        <p>E-Commerce Website</p>
+      </div>
+      <div class="portfolio-card">
+        <div class="p-thumb" style="background: linear-gradient(135deg, #0d0d0d, #c9a227)"><span>Restaurant</span></div>
+        <p>Business Website</p>
+      </div>
+      <div class="portfolio-card">
+        <div class="p-thumb" style="background: linear-gradient(135deg, #111, #b8952a)"><span>Photography</span></div>
+        <p>Portfolio Site</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="order-section" id="order">
+    <div class="section-label">LET'S BUILD</div>
+    <h2>Order Your <span class="gold">Website</span></h2>
+    <p class="order-sub">Fill the form below and we'll contact you within 24 hours.</p>
+    <div class="order-wrapper">
+      <div class="order-info">
+        <h3>Why Choose Us?</h3>
+        <ul>
+          <li>✅ Fast 3-5 day delivery</li>
+          <li>✅ Mobile responsive design</li>
+          <li>✅ Free revisions included</li>
+          <li>✅ SEO optimized</li>
+          <li>✅ 24/7 support after delivery</li>
+          <li>✅ Affordable pricing</li>
+        </ul>
+        <div class="contact-box">
+          <p>📱 WhatsApp: <strong>+91 9943672720</strong></p>
+          <p>📧 Email: <strong>rathwebworks@gmail.com</strong></p>
+        </div>
+      </div>
+      <div class="form-box">
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" id="name" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" id="phone" placeholder="+91 XXXXXXXXXX">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label>Business Name *</label>
+          <input type="text" id="business" placeholder="Your business name">
+        </div>
+        <div class="form-group">
+          <label>Website Type *</label>
+          <select id="type">
+            <option value="">Select website type</option>
+            <option>Landing Page - ₹999</option>
+            <option>Business Website - ₹2,499</option>
+            <option>E-Commerce Store - ₹4,999</option>
+            <option>Portfolio Website - ₹1,499</option>
+            <option>Custom Project</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Budget Range</label>
+          <select id="budget">
+            <option value="">Select budget</option>
+            <option>Under ₹1,000</option>
+            <option>₹1,000 - ₹3,000</option>
+            <option>₹3,000 - ₹5,000</option>
+            <option>₹5,000+</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label>Project Description *</label>
+          <textarea id="desc" placeholder="Tell us about your website needs..."></textarea>
+        </div>
+        <button class="submit-btn" onclick="submitOrder()">Submit Order 🚀</button>
+        <div id="success-msg" class="success-msg"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">RATH <span>WEB WORKS</span></div>
+        <p>Building digital experiences that matter.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#order">Order</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📱 +91 9943672720</p>
+        <p>📧 rathwebworks@gmail.com</p>
+        <p>📍 Tamil Nadu, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Rath Web Works. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
