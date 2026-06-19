@@ -1,31 +1,28 @@
-8:44 PM
-New messages
-async function submitOrder() {
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const business = document.getElementById('business').value.trim();
-  const type = document.getElementById('type').value;
-  const budget = document.getElementById('budget').value;
-  const desc = document.getElementById('desc').value.trim();
-  const msg = document.getElementById('success-msg');
+<form id="orderForm">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <button type="submit">Order Now</button>
+</form>
 
-  if (!name || !phone || !business || !type || !desc) {
-    msg.style.color = '#ff4d4d';
-    msg.textContent = '⚠️ Please fill all required fields!';
-    return;
+<script>
+document.getElementById("orderForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+
+  const response = await fetch("https://formspree.io/f/xaqzrepl", {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json"
+    }
+  });
+
+  if (response.ok) {
+    alert("Order submitted successfully!");
+    this.reset();
+  } else {
+    alert("Failed to submit order.");
   }
-
-  try {
-    const response = await fetch("https://formspree.io/f/xaqzrepl", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        name,
-        phone,
-        email,
-        business,
-        type,
+});
+</script>
