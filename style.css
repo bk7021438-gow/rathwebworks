@@ -722,3 +722,10 @@ footer { background: var(--black3); border-top: 1px solid #1a1a1a; }
   color: var(--text-muted);
   margin-bottom: 28px;
 }
+.portfolio-card,
+.portfolio-card p,
+.portfolio-card span,
+.portfolio-card h3,
+.portfolio-card div {
+  text-decoration: none !important;
+}
