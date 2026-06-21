@@ -368,6 +368,8 @@ body {
   overflow: hidden;
   border: 1px solid #222;
   transition: transform 0.3s, border-color 0.3s;
+  text-decoration: none;
+  display: block;
 }
 
 .portfolio-card:hover {
