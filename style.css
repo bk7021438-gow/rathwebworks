@@ -602,3 +602,121 @@ footer { background: var(--black3); border-top: 1px solid #1a1a1a; }
   .success-msg { grid-column: 1; }
   .footer-top { grid-template-columns: 1fr; padding: 40px 24px; }
 }
+
+/* DEMO PAGES */
+.demo-hero {
+  padding: 100px 60px 60px;
+  text-align: center;
+  background: radial-gradient(ellipse at top, #1a1500 0%, #000 60%);
+}
+
+.demo-hero h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 56px;
+  letter-spacing: 2px;
+  margin: 16px 0;
+  color: #fff;
+}
+
+.demo-sub {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.demo-card {
+  background: var(--black3);
+  border: 1px solid #222;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.demo-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-dark);
+}
+
+.demo-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.demo-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.demo-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--gold);
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+
+.demo-badge.coming {
+  background: #555;
+  color: #fff;
+}
+
+.demo-info {
+  padding: 24px;
+}
+
+.demo-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.demo-info p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.demo-link {
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.demo-cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--black2);
+}
+
+.demo-cta h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.demo-cta p {
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
